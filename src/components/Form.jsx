@@ -2,21 +2,21 @@ import React from 'react';
 import './Form.css';
 
 
-const Form = () => {
+const Form = (props) => {
     return (
         <div className='form'>
-            <label htmlFor="fname"> First Name</label><br />
-            <input type="text" id='fname' /><br />
+            <label htmlFor="firstname"> First Name</label><br />
+            <input type="text" id='firstname' /><br />
 
-            <label htmlFor="lname"> Last Name</label><br />
-            <input type="text" id='lname' /><br />
+            <label htmlFor="lastname"> Last Name</label><br />
+            <input type="text" id='lastname' /><br />
 
             <label htmlFor="number">Number</label><br />
-            <input type="number" id='number' /><br />
+            <input type="tel" id='number' required /><br />
 
             <label htmlFor="role">Role</label><br />
             <select id='role' className='select'>
-                <option value=""></option>
+                <option value="" invalid='true' hidden></option>
                 <option value="Teacher">Teacher</option>
                 <option value="Student">Student</option>
                 <option value="Other">other</option>
@@ -25,7 +25,7 @@ const Form = () => {
 
             <label htmlFor="message">Message</label><br />
             <textarea name="message" id="message" cols="20" rows="5"></textarea><br />
-            <button className='send'>SEND</button>
+            <button type='submit' onClick={props.submit} className='send'>SEND</button>
         </div>
     );
 };

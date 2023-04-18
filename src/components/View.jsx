@@ -1,16 +1,16 @@
 import React from 'react';
 import './View.css';
 
-const View = () => {
+const View = (props) => {
     return (
         <div className='container'>
 
             <ul className="list">
-                <li>First name:</li>
-                <li>Last name:</li>
-                <li>Number:</li>
-                <li>Role:</li>
-                <li>Message:</li>
+                <li>First name:{props.firstname}</li>
+                <li>Last name: {props.lastname}</li>
+                <li>Number:{props.number}</li>
+                <li>Role:{props.role}</li>
+                <li>Message:{props.message}</li>
 
             </ul>
         </div>

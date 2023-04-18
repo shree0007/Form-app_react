@@ -5,12 +5,27 @@ import Modal from './components/Modal';
 import './App.css'
 
 class App extends Component {
+  state = {
+    showModal: false
+  }
+
+  modalHandler = (e) => {
+    e.preventDefault()
+
+    this.setState({
+      showModal: !this.state.showModal
+    })
+  }
+
+
   render() {
     return (
       <div className='body'>
-        <Form />
+        <Form submit={this.modalHandler} />
         <View />
-        <Modal />
+
+        {this.state.showModal && <Modal />}
+
       </div>
     );
   }
