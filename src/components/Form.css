@@ -1,0 +1,43 @@
+.form {
+    background-color: beige;
+    width: 210px;
+    margin: 2rem 0 0 4rem;
+    padding: 5rem;
+    border-radius: 15px;
+
+}
+
+label {
+    font-size: small;
+}
+
+input {
+    margin-bottom: 1rem;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    width: 150px;
+
+
+}
+
+select {
+    margin-bottom: 1rem;
+    border: 0.2px solid gray;
+    border-radius: 5px;
+    width: 150px;
+}
+
+textarea {
+    margin-bottom: 1rem;
+    border: 0.2px solid gray;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.send {
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+    padding: 0.4rem;
+    color: white;
+}

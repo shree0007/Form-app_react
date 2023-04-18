@@ -1,0 +1,36 @@
+.modal {
+    background-color: rgba(172, 172, 240, 0.535);
+    width: 400px;
+    margin: 2rem 1rem 0 1rem;
+    padding: 2.5rem;
+    border-radius: 15px;
+    /* visibility: hidden; */
+}
+
+p {
+    font-size: small;
+    text-align: inherit;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+#btn-yes {
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+    font-size: xx-small;
+    color: white;
+    padding: 0.2rem;
+}
+
+#btn-no {
+    background-color: rgba(172, 172, 240, 0.535);
+    border: none;
+    font-size: xx-small;
+    margin-left: 0.8rem;
+    padding: 0.2rem;
+
+}
