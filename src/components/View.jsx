@@ -6,11 +6,11 @@ const View = (props) => {
         <div className='container'>
 
             <ul className="list">
-                <li>First name:{props.firstname}</li>
-                <li>Last name: {props.lastname}</li>
-                <li>Number:{props.number}</li>
-                <li>Role:{props.role}</li>
-                <li>Message:{props.message}</li>
+                <li>First name: <span>{props.firstname}</span></li>
+                <li>Last name: <span>{props.lastname}</span></li>
+                <li>Number: <span>{props.number}</span></li>
+                <li>Role: <span>{props.role}</span></li>
+                <li>Message: <span>{props.message}</span></li>
 
             </ul>
         </div>

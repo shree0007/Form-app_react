@@ -6,7 +6,14 @@ import './App.css'
 
 class App extends Component {
   state = {
-    showModal: false
+    showModal: false,
+    view: {
+      firstname: '',
+      lastname: '',
+      number: '',
+      role: '',
+      message: ''
+    }
   }
 
   modalHandler = (e) => {
@@ -16,15 +23,25 @@ class App extends Component {
       showModal: !this.state.showModal
     })
   }
+  inputChangeHandler = (e) => {
+    const name = e.target.name;
+    this.setState({
+      view: {
+        ...this.state.view,
+        [name]: e.target.value
+      }
+    });
 
+  }
 
   render() {
     return (
       <div className='body'>
-        <Form submit={this.modalHandler} />
-        <View />
+        <Form submit={this.modalHandler} inputChangeHandler={this.inputChangeHandler} />
 
-        {this.state.showModal && <Modal />}
+        <View  {...this.state.view} />
+
+        {this.state.showModal && <Modal click={this.modalHandler}  {...this.state.view} />}
 
       </div>
     );

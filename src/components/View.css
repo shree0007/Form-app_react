@@ -28,4 +28,9 @@
     height: auto;
     padding: 10px;
     text-transform: capitalize;
+    font-weight: 800;
+}
+
+li span {
+    font-weight: 100;
 }
