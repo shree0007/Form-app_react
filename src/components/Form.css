@@ -1,14 +1,20 @@
 .form {
     background-color: beige;
     width: 210px;
-    margin: 2rem 0 0 4rem;
-    padding: 5rem;
+    margin: 10rem 0 0 4rem;
+    padding: 0.5rem 3rem 3rem 5rem;
     border-radius: 15px;
+    font-family: courier, monospace;
 
+}
+
+.form h3 {
+    margin-bottom: 2rem;
 }
 
 label {
     font-size: small;
+    margin-bottom: 0.5rem;
 }
 
 input {
@@ -16,6 +22,7 @@ input {
     border: 0.5px solid gray;
     border-radius: 5px;
     width: 150px;
+    padding: 0.4rem;
 
 
 }
@@ -24,14 +31,15 @@ select {
     margin-bottom: 1rem;
     border: 0.2px solid gray;
     border-radius: 5px;
-    width: 150px;
+    width: 162px;
+    padding: 0.4rem;
 }
 
 textarea {
     margin-bottom: 1rem;
     border: 0.2px solid gray;
     border-radius: 5px;
-    width: 150px;
+    width: 162px;
 }
 
 .send {
@@ -40,4 +48,5 @@ textarea {
     border-radius: 5px;
     padding: 0.4rem;
     color: white;
+    font-family: inherit;
 }

@@ -12,7 +12,7 @@ const Modal = (props) => {
                 <p>Role: <span>{props.role}</span></p>
                 <p>Message: <span>{props.message}</span></p>
                 <div className='buttons'></div>
-                <button onClick={props.click} id='btn-yes'>Yes, I AM SURE</button>
+                <button onClick={props.submit} id='btn-yes'>Yes, I AM SURE</button>
                 <button onClick={props.click} id='btn-no'>NO, I DON'T WANT TO POST IT</button>
             </div>
         </div>

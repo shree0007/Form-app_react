@@ -5,7 +5,10 @@ import './Form.css';
 const Form = (props) => {
     return (
         <div className='form'>
+            <h3> Fill out the form:</h3>
+
             <form onSubmit={props.submit} onChange={props.inputChangeHandler}>
+
                 <label htmlFor="firstname"> First Name</label><br />
                 <input type="text" name='firstname' id='firstname' /><br />
 

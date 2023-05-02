@@ -1,0 +1,60 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "firstname": "James",
+      "lastname": "Bond",
+      "number": "12345",
+      "role": "student",
+      "message": "This is James"
+    },
+    {
+      "id": 2,
+      "firstname": "Chris",
+      "lastname": "Ronaldo",
+      "number": "23611",
+      "role": "teacher",
+      "message": "This is Chris"
+    },
+    {
+      "id": 3,
+      "firstname": "Lionel",
+      "lastname": "Messi",
+      "number": "112255",
+      "role": "other",
+      "message": "This is Messi"
+    },
+    {
+      "firstname": "a",
+      "lastname": "b",
+      "number": "11111",
+      "role": "Student",
+      "message": "sasdasdasasfs",
+      "id": 4
+    },
+    {
+      "firstname": "baa",
+      "lastname": "ccc",
+      "number": "12345",
+      "role": "Other",
+      "message": "sddfsdfdsf",
+      "id": 5
+    },
+    {
+      "firstname": "Matt",
+      "lastname": "River",
+      "number": "5678213",
+      "role": "Teacher",
+      "message": "Hello, I am Matt!",
+      "id": 6
+    },
+    {
+      "firstname": "Angela",
+      "lastname": "White",
+      "number": "5678213",
+      "role": "Student",
+      "message": "Hello, I am Angela!",
+      "id": 7
+    }
+  ]
+}
